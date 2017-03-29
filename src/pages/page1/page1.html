@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-buttons start left>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>Get Tokens</ion-title>
+    <ion-buttons end right>
+        <button ion-button icon-only color="positive">
+           <ion-icon name="refresh"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+     <div>
+        <ion-card>
+
+              <ion-card-header text-center>
+                Buy Tokens
+                <div padding>
+                      <ion-segment [(ngModel)]="payment" color="secondary">
+                          <ion-segment-button value="100">
+                            Ksh. 100
+                          </ion-segment-button>
+                          <ion-segment-button value="250">
+                            Ksh. 250
+                          </ion-segment-button>
+                          <ion-segment-button value="500">
+                            Ksh. 500
+                          </ion-segment-button>
+                  </ion-segment>
+                 </div>
+
+                      </ion-card-header>
+
+              <ion-card-content>
+
+                  <ion-list inset>
+                      <ion-item>
+                              <ion-label>Enter Amount</ion-label>
+                              <ion-input [(ngModel)]="payment" type="number"></ion-input>
+                      </ion-item>
+                </ion-list>
+
+                <div padding>
+                      <button ion-button color="secondary" round>Get Tokens</button>
+                </div>
+
+             </ion-card-content>
+        </ion-card>
+    </div>
+
+    <div>
+        <ion-card>
+          <ion-card-header text-center>
+            Kopa Tokens
+            <div padding>
+                  <ion-segment [(ngModel)]="kopa" color="secondary">
+                      <ion-segment-button value="100">
+                        Ksh. 100
+                      </ion-segment-button>
+                      <ion-segment-button value="250">
+                        Ksh. 250
+                      </ion-segment-button>
+                      <ion-segment-button value="500">
+                        Ksh. 500
+                      </ion-segment-button>
+              </ion-segment>
+             </div>
+
+          </ion-card-header>
+              <ion-card-content>
+
+                 <ion-list  inset>
+                    <ion-item>
+                            <ion-label>Enter Amount</ion-label>
+                            <ion-input [(ngModel)]="kopa" type="number"></ion-input>
+                    </ion-item>
+                </ion-list>
+
+              <div padding>
+                    <button ion-button color="secondary" round>Get Tokens</button>
+              </div>
+              </ion-card-content>
+        </ion-card>
+    </div>
+
+</ion-content>
